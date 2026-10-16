@@ -53,3 +53,9 @@ h2 { max-width: 480px; margin-bottom: 0; font-family: Georgia, serif; font-size:
   .feature-grid, .menu-grid { grid-template-columns: 1fr; }
   .site-footer { flex-direction: column; }
 }
+
+/* Menu page cards */
+.menu-card { transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+.menu-card:hover { transform: translateY(-3px); border-color: #d4b08c; box-shadow: var(--shadow); }
+.menu-card h2 { margin: .5rem 0; font-size: 1.8rem; }
+.menu-card p:not(.eyebrow):not(.price) { color: var(--muted); }
