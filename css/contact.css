@@ -1,0 +1,6 @@
+.contact-layout { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(220px, .8fr); align-items: start; gap: 2rem; }
+.contact-details { padding: 1.5rem 0; color: var(--muted); }
+.contact-details h2 { margin: .6rem 0 1rem; color: var(--coffee-dark); font-size: 2rem; }
+.contact-details h3 { margin: 1.5rem 0 .25rem; color: var(--coffee); font-family: Georgia, serif; font-size: 1.2rem; }
+.contact-details p { margin-bottom: .5rem; }
+@media (max-width: 700px) { .contact-layout { grid-template-columns: 1fr; } }
