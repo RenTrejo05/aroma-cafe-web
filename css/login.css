@@ -1,0 +1,4 @@
+.form-card .button { border: 0; cursor: pointer; font: inherit; }
+.form-card .button:focus-visible, .form-field input:focus-visible { outline: 3px solid #bd8355; outline-offset: 3px; }
+.form-status { margin: 1rem 0 0; color: #47734b; font-weight: 700; }
+.form-status:empty { display: none; }
