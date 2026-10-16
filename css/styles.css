@@ -1,0 +1,55 @@
+:root {
+  --coffee: #5b3424;
+  --coffee-dark: #352016;
+  --cream: #fbf6ee;
+  --paper: #fffdf9;
+  --caramel: #bd8355;
+  --muted: #786b61;
+  --line: #e8ded2;
+  --shadow: 0 18px 45px rgba(53, 32, 22, .08);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--coffee-dark); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; }
+a { color: inherit; }
+.site-header { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: 1.25rem clamp(1.25rem, 6vw, 6rem); border-bottom: 1px solid var(--line); background: rgba(255,253,249,.96); }
+.brand { display: inline-flex; align-items: center; gap: .7rem; font-family: Georgia, serif; font-weight: 700; font-size: 1.25rem; text-decoration: none; white-space: nowrap; }
+.brand-mark { display: grid; place-items: center; width: 2.25rem; height: 2.25rem; border-radius: 50%; background: var(--coffee); color: white; font-family: Georgia, serif; }
+nav { display: flex; flex-wrap: wrap; gap: clamp(.75rem, 2vw, 2rem); }
+nav a { color: var(--muted); font-size: .92rem; text-decoration: none; }
+nav a:hover, nav a[aria-current="page"] { color: var(--coffee); }
+.hero { padding: clamp(4rem, 10vw, 8rem) clamp(1.25rem, 12vw, 12rem); background: radial-gradient(ellipse at 80% 15%, #f1dfc8 0, transparent 38%), var(--cream); }
+.eyebrow { color: var(--caramel); font-size: .73rem; font-weight: 800; letter-spacing: .18em; }
+h1, h2, h3, p { margin-top: 0; }
+h1 { max-width: 800px; margin-bottom: 1.3rem; font-family: Georgia, serif; font-size: clamp(3.2rem, 8vw, 6.6rem); font-weight: 500; letter-spacing: -.055em; line-height: .99; }
+h1 span { color: var(--caramel); font-style: italic; }
+.hero-copy { max-width: 430px; margin-bottom: 2rem; color: var(--muted); font-size: 1.1rem; }
+.button { display: inline-flex; align-items: center; gap: 1rem; padding: .9rem 1.3rem; border-radius: 3px; background: var(--coffee); color: white; font-weight: 700; text-decoration: none; }
+.button:hover { background: var(--coffee-dark); }
+.intro { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: end; padding: 4rem clamp(1.25rem, 8vw, 8rem) 2rem; }
+h2 { max-width: 480px; margin-bottom: 0; font-family: Georgia, serif; font-size: clamp(2rem, 4vw, 3.3rem); font-weight: 500; line-height: 1.08; }
+.intro > p { max-width: 470px; margin-bottom: .25rem; color: var(--muted); }
+.feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; padding: 2rem clamp(1.25rem, 8vw, 8rem) 5rem; }
+.feature-card { min-height: 190px; padding: 1.5rem; border: 1px solid var(--line); background: #fff; }
+.feature-number { color: var(--caramel); font-size: .78rem; font-weight: 800; letter-spacing: .1em; }
+.feature-card h3 { margin: 1.2rem 0 .5rem; font-family: Georgia, serif; font-size: 1.4rem; font-weight: 500; }
+.feature-card p { margin: 0; color: var(--muted); font-size: .95rem; }
+.site-footer { display: flex; justify-content: space-between; gap: 1rem; padding: 1.5rem clamp(1.25rem, 8vw, 8rem); border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
+.page-shell { min-height: 65vh; padding: 3rem clamp(1.25rem, 8vw, 8rem) 5rem; }
+.page-heading { max-width: 760px; margin-bottom: 2rem; }
+.page-heading h1 { font-size: clamp(2.8rem, 6vw, 5rem); }
+.menu-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; }
+.menu-card { padding: 1.5rem; border: 1px solid var(--line); border-radius: 6px; background: white; }
+.menu-card .price { color: var(--caramel); font-weight: 800; }
+.form-card { max-width: 560px; padding: 2rem; border: 1px solid var(--line); background: white; box-shadow: var(--shadow); }
+.form-field { display: grid; gap: .4rem; margin-bottom: 1rem; }
+.form-field label { font-size: .9rem; font-weight: 700; }
+.form-field input, .form-field textarea { width: 100%; padding: .8rem; border: 1px solid #cfc1b3; border-radius: 3px; font: inherit; }
+.form-note { color: var(--muted); font-size: .85rem; }
+@media (max-width: 700px) {
+  .site-header { align-items: flex-start; flex-direction: column; gap: 1rem; }
+  nav { gap: .8rem 1.2rem; }
+  .intro { grid-template-columns: 1fr; gap: 1.25rem; }
+  .feature-grid, .menu-grid { grid-template-columns: 1fr; }
+  .site-footer { flex-direction: column; }
+}
