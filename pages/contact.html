@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Aroma Café</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <script src="../js/contact.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../index.html"><span class="brand-mark">A</span><span>Aroma Café</span></a>
+    <nav aria-label="Main navigation"><a href="../index.html">Home</a><a href="menu.html">Menu</a><a href="login.html">Login</a><a href="contact.html" aria-current="page">Contact</a></nav>
+  </header>
+  <main class="page-shell">
+    <section class="page-heading">
+      <p class="eyebrow">COME SAY HELLO</p>
+      <h1>We’d love to hear from you.</h1>
+      <p class="hero-copy">Questions about the menu or planning a visit? Send the team a note.</p>
+    </section>
+    <section class="contact-layout">
+      <form class="form-card" id="contact-form">
+        <div class="form-field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
+        <div class="form-field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="form-field"><label for="message">Message</label><textarea id="message" name="message" rows="5" minlength="10" required></textarea></div>
+        <button class="button" type="submit">Send message <span aria-hidden="true">→</span></button>
+        <p class="form-note">Demo form: messages are not sent to an email service.</p>
+        <p id="contact-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+      <aside class="contact-details">
+        <p class="eyebrow">FIND YOUR WAY</p>
+        <h2>Drop by for a cup.</h2>
+        <p>123 Main Street<br>Chihuahua, Chihuahua</p>
+        <h3>Opening hours</h3>
+        <p>Monday–Friday · 7:00 AM–6:00 PM<br>Saturday–Sunday · 8:00 AM–4:00 PM</p>
+        <h3>Call us</h3>
+        <p>(614) 555-0199</p>
+      </aside>
+    </section>
+  </main>
+  <footer class="site-footer"><span>© 2026 Aroma Café</span><span>We’ll save you a seat.</span></footer>
+</body>
+</html>
